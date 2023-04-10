@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Ubuntu';
+
+  src: url('../assets/fonts/Ubuntu-Bold.ttf') format('truetype'),
+       url('../assets/fonts/Ubuntu-Medium.ttf') format('truetype'),
+       url('../assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+aside{
+  background: url(../assets/images/bg-sidebar-mobile.svg) no-repeat center/cover;
+}
+
+
+.active{
+  border: lightblue;
+  color: black;
+  background: lightblue;
+}
+
+@media (min-width: 768px) {
+  /* Styles for screens that are at least 640px wide (sm breakpoint) */
+  aside{
+    background: url(../assets/images/bg-sidebar-desktop.svg) no-repeat center/cover;
+  }
+}
+
+
+
+
+
+
+
+
