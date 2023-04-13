@@ -22,15 +22,17 @@
     <aside class=" h-1/4  md:h-full md:w-1/3 md:rounded-lg">
       <nav class="flex justify-center ">
         <ul class="w-1/2 flex justify-between mt-8 md:flex-col ">
+          
           <li class=" flex items-center">
-            <div class="step_num active text-white border rounded-full p-2 h-7 w-7 flex items-center justify-center mr-4">1</div>
+            <div class="step_num  text-white border rounded-full p-2 h-7 w-7 flex items-center justify-center mr-4">1</div>
             <div class="hidden md:block">
               <h3 class="text-LightGray uppercase text-xs font-sans font-normal">step 1</h3>
               <h2 class="text-white text-sm uppercase">your info</h2>
             </div>
           </li>
+
           <li class=" flex items-center md:mt-6">
-            <div class="step_num text-white border rounded-full p-2 h-7 w-7 flex items-center justify-center mr-4">2</div>
+            <div class="step_num active text-white border rounded-full p-2 h-7 w-7 flex items-center justify-center mr-4">2</div>
             <div class="hidden md:block">
               <h3 class="text-LightGray uppercase text-xs font-sans font-normal">step 2</h3>
               <h2 class="text-white text-sm uppercase">select plan</h2>
@@ -54,101 +56,63 @@
       </nav>
   </aside>
 
-  <form class="personal_info_form container bg-white w-11/12 rounded-md py-8 px-6 absolute top-32 left-4 md:static md:px-16">
-    <h1 class="text-2xl mb-3 text-MarineBlue md:text-3xl">Personal info</h1>
-    <p class="text-CoolGray font-sans font-semibold">Please provide your name, email address, and phone number.</p>
+  <section class="personal_info_form container bg-white w-11/12  rounded-md py-8 px-6 absolute top-32 left-4 md:static md:px-16">
+    <h1 class="text-2xl mb-3 text-MarineBlue md:text-3xl">Select your plan</h1>
+    <p class="text-CoolGray font-sans font-semibold">You have the option of monthly or yearly billing.</p>
 
-    <div class="name mt-3 flex flex-col">
-      <div class="md:mb-1 flex justify-between">
-        <label for="name" class="text-MarineBlue font-sans font-semibold md:font-bold ">Name</label>
-        <span class="required hidden text-StrawberryRed">This field is required</span>
-      </div>
-      <input type="text" id="name" name="name" placeholder="e.g. Stephen King" class="border p-2 rounded-md text-MarineBlue focus:outline-none focus:border-PurplishBlue cursor-pointer">
+    <ul class="flex flex-col mt-6 md:flex-row md:space-x-10 md:h-2/5">
+
+      <li class="select_plan_active plan flex items-center p-2 rounded-md border-solid border md:w-1/3 md:flex-col md:items-start md:justify-between md:p-4">
+        <img src="./assets/images/icon-arcade.svg" alt="Arcade img">
+        <div class="ml-4 md:ml-0">
+          <h2 class="arcade text-MarineBlue">Arcade</h2>
+          <!-- <p class="text-CoolGray font-sans font-semibold">$9/mo</p> -->
+        </div>
+      </li>
+
+      <li class="plan flex items-center p-2 rounded-md border mt-6 md:w-1/3 md:mt-0 md:flex-col md:items-start md:justify-between md:p-4">
+        <img src="./assets/images/icon-advanced.svg" alt="Advanced img">
+        <div class="ml-4 md:ml-0">
+          <h2 class="advanced text-MarineBlue">Advanced</h2>
+          <!-- <p class="text-CoolGray font-sans font-semibold">$12/mo</p> -->
+        </div>
+      </li>
+
+      <li class="plan flex items-center p-2 rounded-md border mt-6 md:w-1/3 md:mt-0 md:flex-col md:items-start md:justify-between md:p-4">
+        <img src="./assets/images/icon-pro.svg" alt="Pro img">
+        <div class="ml-4 md:ml-0">
+          <h2 class="pro text-MarineBlue">Pro</h2>
+          <!-- <p class="text-CoolGray font-sans font-semibold">$15/mo</p> -->
+        </div>
+      </li>
+    </ul>
+
+    <div class="bill_toggle flex items-center justify-center bg-LightGray mt-10 py-2 rounded-md">
+      <h2 class="monthly ">Monthly</h2>
+      <div class="  mx-4 flex items-center  bg-MarineBlue w-8 h-4 rounded-full p-1 ">
+          <div class="bg-white w-3 h-3 rounded-full">
+            
+          </div>
+      </div> 
+      <h2 class="yearly text-CoolGray">Yearly</h2>
     </div>
+   
 
-    <div class="email mt-3 flex flex-col">
-      <div class="md:mb-1 flex justify-between">
-        <label for="email" class="text-MarineBlue font-sans font-semibold md:font-bold ">Email</label>
-        <span class="required hidden text-StrawberryRed">This field is required</span>
-      </div>
-      <input type="email" id="email" name="email" placeholder="e.g. stephenking@lorem.com" class="border p-2 rounded-md  cursor-pointer text-MarineBlue focus:outline-none focus:border-PurplishBlue">
-    </div>
+  </section> 
 
-    <div class="phone mt-3 flex flex-col">
-      <div class="md:mb-1 flex justify-between">
-        <label for="phone" class="text-MarineBlue font-sans font-semibold md:font-bold ">Phone Number</label>
-        <span class="required hidden text-StrawberryRed">This field is required</span>
-      </div>
-      <input type="number" id="phone" name="phone" placeholder="e.g. +1 234 567 890" class="border p-2 rounded-md text-MarineBlue focus:outline-none focus:border-PurplishBlue cursor-pointer">
-    </div>
-
-  </form> 
-
-  <div class="absolute bottom-0  bg-white w-screen py-4 px-2 flex justify-end md:bg-transparent md:w-1/4 md:right-12">
-    <button type="submit" class="bg-MarineBlue text-white p-2 rounded-md hover:bg-PurplishBlue">
-      <a href="./selectplan.html">Next Step</a>
+  <div class="absolute bottom-0  bg-white w-screen py-4 px-2 flex justify-between md:w-2/3 md:bg-transparent md:items-center md:left-80 ">
+    <button type="submit" class="bg-transparent text-CoolGray  hover:">
+      <a href="./index.html">Go Back</a>
     </button>
-  </div>
+    <button type="submit" class="bg-MarineBlue text-white p-2 rounded-md hover:bg-PurplishBlue">
+      <a href="#">Next Step</a>
+    </button>
+  </div> 
 
   </div>
-  <!-- Sidebar start -->
 
-  <!-- Step 1
-  Your info
 
-  Step 2
-  Select plan
-
-  Step 3
-  Add-ons
-
-  Step 4
-  
-  <h1 class=" text-3xl text-blue-500">
-    Summary
-  </h1> -->
-
-  <!-- Sidebar end -->
-
-  <!-- Step 1 start -->
-
-  <!-- Personal info
-  Please provide your name, email address, and phone number.
-
-  Name
-  e.g. Stephen King
-
-  Email Address
-  
-
-  Phone Number
-  
-
-  Next Step -->
-
-  <!-- Step 1 end -->
-
-  <!-- Step 2 start -->
-
-  <!-- Select your plan
-  You have the option of monthly or yearly billing.
-
-  Arcade
-  $9/mo
-
-  Advanced
-  $12/mo
-
-  Pro
-  $15/mo
-
-  Monthly
-  Yearly
-
-  Go Back
-  Next Step -->
-
-  <!-- Step 2 end -->
+ 
 
   <!-- Step 3 start -->
 <!-- 
@@ -200,6 +164,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  <script src="index.js"></script>
+  <script src="selectplan.js"></script>
 </body>
 </html>
