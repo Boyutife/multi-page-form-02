@@ -32,7 +32,12 @@ submit.addEventListener('click', e=>{
 
   // Check if all required fields have values
   if (username.value && email.value && phoneNumber.value) {
-    console.log(`Name: ${username.value}, Email: ${email.value}, Phone: ${phoneNumber.value}`);
+    const button = document.querySelector('button');
+    const link = button.querySelector('a');
+    link.setAttribute('href', './selectplan.html');
+  } else {
+    e.preventDefault();
+    alert( "Please fill in all the required fields: username, email, and phone number." )
   }
 })
 
