@@ -564,6 +564,18 @@ video {
   top: 8rem;
 }
 
+.top-28 {
+  top: 7rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-24 {
+  top: 6rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
