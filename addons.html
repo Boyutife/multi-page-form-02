@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./dist/output.css">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body class="bg-LightGray w-screen h-screen md:flex md:items-center">
+
+  <div class="container bg-LightBlue h-screen w-screen relative md:mx-auto md:h-3/4 md:w-4/6 md:bg-white md:p-2 md:rounded-lg md:flex">
+    <aside class=" h-1/4  md:h-full md:w-1/3 md:rounded-lg">
+      <nav class="flex justify-center ">
+        <ul class="w-1/2 flex justify-between mt-8 md:flex-col ">
+          
+          <li class=" flex items-center">
+            <div class="step_num  text-white border rounded-full p-2 h-7 w-7 flex items-center justify-center mr-4">1</div>
+            <div class="hidden md:block">
+              <h3 class="text-LightGray uppercase text-xs font-sans font-normal">step 1</h3>
+              <h2 class="text-white text-sm uppercase">your info</h2>
+            </div>
+          </li>
+
+          <li class=" flex items-center md:mt-6">
+            <div class="step_num  text-white border rounded-full p-2 h-7 w-7 flex items-center justify-center mr-4">2</div>
+            <div class="hidden md:block">
+              <h3 class="text-LightGray uppercase text-xs font-sans font-normal">step 2</h3>
+              <h2 class="text-white text-sm uppercase">select plan</h2>
+            </div>
+          </li>
+          <li class=" flex items-center md:mt-6">
+            <div class="step_num active text-white border rounded-full p-2 h-7 w-7 flex items-center justify-center mr-4">3</div>
+            <div class="hidden md:block">
+              <h3 class="text-LightGray uppercase text-xs font-sans font-normal">step 3</h3>
+              <h2 class="text-white text-sm uppercase">add ons</h2>
+            </div>
+          </li>
+          <li class=" flex items-center md:mt-6">
+            <div class="step_num  text-white border rounded-full p-2 h-7 w-7 flex items-center justify-center mr-4">4</div>
+            <div class="hidden md:block">
+              <h3 class="text-LightGray uppercase text-xs font-sans font-normal">step 4</h3>
+              <h2 class="text-white text-sm uppercase">summary</h2>
+            </div>
+          </li>
+         </ul>
+      </nav>
+  </aside>
+
+  <section class="personal_info_form container bg-white w-11/12  rounded-md py-8 px-6 absolute top-24 left-4 md:static md:px-16">
+    <h1 class="text-2xl mb-3 text-MarineBlue md:text-3xl">Pick add-ons</h1>
+    <p class="text-CoolGray font-sans font-semibold">Add-ons help enhance your gaming experience.</p>
+    <ul class="mt-5">
+
+      <li class="border p-2 flex items-center justify-between  rounded-md">
+        <div class="flex items-center">
+          <input type="checkbox" class="h-5 w-8">
+         <div class="ml-4 md:ml-8">
+            <h2 class="text-MarineBlue font-semibold">Online service</h2>
+            <p  class="text-CoolGray font-sans font-normal">Access to multiplayer games</p>
+         </div>
+        </div>
+        <p class="text-PurplishBlue text-sm font-sans font-semibold">+$1/mo</p>
+      </li>
+
+      <li class="border p-2 flex items-center justify-between  rounded- mt-4">
+        <div class="flex items-center">
+          <input type="checkbox" class="h-5 w-8">
+         <div class="ml-4 md:ml-8">
+            <h2 class="text-MarineBlue font-semibold">Larger storage</h2>
+            <p  class="text-CoolGray font-sans font-normal">Extra 1TB cloud save</p>
+         </div>
+        </div>
+        <p class="text-PurplishBlue text-sm font-sans font-semibold">+$2/mo</p>
+      </li>
+
+      <li class="border p-2 flex items-center justify-between  rounded-md mt-4">
+        <div class="flex items-center">
+          <input type="checkbox" class="h-5 w-8">
+         <div class="ml-4 md:ml-8">
+            <h2 class="text-MarineBlue font-semibold">Customizable service</h2>
+            <p  class="text-CoolGray font-sans font-normal">Custom theme on your profile</p>
+         </div>
+        </div>
+        <p class="text-PurplishBlue text-sm font-sans font-semibold">+$2/mo</p>
+      </li>
+
+  
+
+    </ul>
+   
+
+  </section> 
+
+  <div class="absolute bottom-0  bg-white w-screen py-4 px-2 flex justify-between md:w-2/3 md:bg-transparent md:items-center md:left-80 ">
+    <button type="submit" class="bg-transparent text-CoolGray  hover:">
+      <a href="./index.html">Go Back</a>
+    </button>
+    <button type="submit" class="bg-MarineBlue text-white p-2 rounded-md hover:bg-PurplishBlue">
+      <a href="#">Next Step</a>
+    </button>
+  </div> 
+
+  </div>
+
+
+ 
+
+  <!-- Step 3 start -->
+<!-- 
+  Pick add-ons
+  Add-ons help enhance your gaming experience.
+
+  Online service
+  Access to multiplayer games
+  +$1/mo
+
+  Larger storage
+  Extra 1TB of cloud save
+  +$2/mo
+
+  Customizable Profile
+  Custom theme on your profile
+  +$2/mo
+
+  Go Back
+  Next Step -->
+
+  <!-- Step 3 end -->
+
+  <!-- Step 4 start -->
+
+  <!-- Finishing up
+  Double-check everything looks OK before confirming. -->
+
+  <!-- Dynamically add subscription and add-on selections here -->
+
+  <!-- Total (per month/year)
+
+  Go Back
+  Confirm -->
+
+  <!-- Step 4 end -->
+
+  <!-- Step 5 start -->
+
+  <!-- Thank you!
+
+  Thanks for confirming your subscription! We hope you have fun 
+  using our platform. If you ever need support, please feel free 
+  to email us at support@loremgaming.com. -->
+
+  <!-- Step 5 end -->
+  
+  <!-- <div class="attribution ">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src=""></script>
+</body>
+</html>
